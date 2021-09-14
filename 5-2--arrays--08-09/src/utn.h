@@ -46,7 +46,8 @@ int getInt(int *pResultado);
  * \param cadena Cadena de caracteres a ser analizada
  * \return Retorna 1 (vardadero) si la cadena es numerica y 0 (falso) si no lo es
  */
-int esNumerica(char *cadena);
+//int esNumerica(char *cadena);
+int esNumerica(char* cadena);
 
 /**
  * \brief Solicita un numero al usuario, leuego de verificarlo devuelve el resultado
@@ -82,14 +83,31 @@ int convertirTemperaturaCaF(int* temperaturaC);
  * \param maximo Es el minimo minimo a ser aceptado
  * \return Retorna 0 si se obtuvo el numero y -1 si no
  */
-void cargarArray(int array[], int tamanio);
+
+//void cargarArray(int array[], int tamanio);
 
 
 int buscarMaximo(int array[], int tamanio);
 
+void cargarArray(int array[], int tamanio);
 
 void mostrarArray(int array[], int tamanio);
 
 void mostrarIndiceMaximo(int array[], int tamanio, int maximo);
+
+/*void contadorNumeros(int *contadorPositivos, int *contadorNegativos,
+		int array[], int tamanio);*/
+
+void contadorNumerosPositivosNegativos(int array[], int tamanio);
+
+void contadorPares(int *pPares, int array[], int tamanio);
+
+void contadorImpares(int *pImpares, int array[], int tamanio);
+
+void mostrarContenidoPosicionesImpares(int array[], int tamanio);
+
+void sumarNumerosPares(int *pSumaPares, int array[], int tamanio);
+
+
 
 #endif /* UTN_H_ */
